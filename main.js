@@ -14,8 +14,8 @@ function load_img(){
 	// write code to Upload golf image on the canvas
 	fabric.Image.fromURL("golf-h.png", function(Img){
 		hole_obj=Img;
-		hole_obj.scaletoWidth(50);
-		hole_obj.scaletoHeight(50);
+		hole_obj.scaleToWidth(50);
+		hole_obj.scaleToHeight(50);
 		hole_obj.set({
 			top:hole_y,
 			left:hole_x,
@@ -30,8 +30,8 @@ function new_image()
 	// write code to Upload ball image on canvas
 	fabric.Image.fromURL("ball.png", function(Img){
 		ball_obj=Img;
-		ball_obj.scaletoWidth(50);
-		ball_obj.scaletoHeight(50);
+		ball_obj.scaleToWidth(50);
+		ball_obj.scaleToHeight(50);
 		ball_obj.set({
 			top:hole_y,
 			left:hole_x,
@@ -84,7 +84,7 @@ function my_keydown(e)
 		if (ball_y >= 38){
 			ball_y = ball_y- block_image_height
 			console.log("block image height is "+ block_image_height)
-			console.log("when up pressed X is = " + ball_x+ ", Y= " + ball_Y)
+			console.log("when up pressed X is = " + ball_x+ ", Y= " + ball_y)
 			canvas.remove(ball_obj)
 			player_update()
 		}
