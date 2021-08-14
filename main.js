@@ -86,7 +86,7 @@ function my_keydown(e)
 			console.log("block image height is "+ block_image_height)
 			console.log("when up pressed X is = " + ball_x+ ", Y= " + ball_y)
 			canvas.remove(ball_obj)
-			player_update()
+			new_image()
 		}
 	}
 
